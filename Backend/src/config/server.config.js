@@ -16,11 +16,17 @@ if (!process.env.JWT_SECRET) {
 if (!process.env.NODE_ENV) {
   throw new Error("NODE_ENV is not defined in environment variable");
 }
+
+if (!process.env.FRONTED_URL) {
+  throw new Error("FRONTED_URL is not defined in environment variable");
+}
+
 const config = {
   PORT: process.env.PORT,
   MONGO_URI: process.env.MONGO_URI,
   JWT_SECRET: process.env.JWT_SECRET,
   NODE_ENV: process.env.NODE_ENV,
+  FRONTED_URL: process.env.FRONTED_URL,
 };
 
 export default config;
