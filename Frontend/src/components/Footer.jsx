@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/krishkumar0204/Syntax-Shift"
               target="_blank"
               rel="noreferrer"
               aria-label="SyntaxShift on GitHub"
